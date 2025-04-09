@@ -38,8 +38,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/index.html', // Path to your HTML template
-      title: 'Vibe Pong AI'
+      template: './public/index.html', // Ensure path is relative to config
+      // title: 'Vibe Pong AI' // Title removed, hardcoded in template
       // inject: 'body' // Rely on default injection for now
     }),
     new CopyWebpackPlugin({
