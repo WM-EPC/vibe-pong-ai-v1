@@ -31,6 +31,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true, // Clean the output directory before each build
   },
+  externals: {
+    // Don't bundle the 'phaser' package
+    // Expect it to be available globally via a script tag as 'Phaser'
+    phaser: 'Phaser'
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html', // Path to your HTML template
