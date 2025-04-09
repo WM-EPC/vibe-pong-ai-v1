@@ -39,8 +39,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html', // Path to your HTML template
-      title: 'Vibe Pong AI',
-      inject: 'body' // Inject script tag into the body
+      title: 'Vibe Pong AI'
+      // inject: 'body' // Rely on default injection for now
     }),
     new CopyWebpackPlugin({
       patterns: [
