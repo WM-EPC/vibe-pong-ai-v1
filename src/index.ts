@@ -39,5 +39,5 @@ function initGame() {
   const game = new Phaser.Game(config);
 }
 
-// Initialize the game when the DOM is ready
-document.addEventListener('DOMContentLoaded', initGame); 
+// Initialize the game directly (runs after Phaser CDN script loads)
+initGame(); 

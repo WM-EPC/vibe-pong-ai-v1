@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
-  mode: 'development', // Change to 'production' for production builds
+  // mode: 'development', // Let mode be set by CLI flag (--mode=production or development)
   devtool: 'inline-source-map', // Source mapping for easier debugging
   module: {
     rules: [

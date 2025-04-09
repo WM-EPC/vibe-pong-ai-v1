@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "./dist",
+    // "outDir": "./dist", // Let Webpack handle the output directory
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
